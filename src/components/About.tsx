@@ -1,7 +1,7 @@
 const About = () => {
   const stats = [
     {
-      value: "14+",
+      value: "8+",
       label: "Projects Built",
     },
     {
@@ -68,7 +68,7 @@ const About = () => {
 
               <p className="text-slate-400 leading-relaxed">
                 Currently, I am focused on AI, mastering
-                TypeScript, Node.js, Python and enterprise software
+                Backend, Node.js, Python and modern technologies
                 development while contributing to meaningful projects.
               </p>
 

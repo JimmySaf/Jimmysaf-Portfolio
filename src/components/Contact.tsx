@@ -184,12 +184,14 @@ return ( <section
 
           <div className="flex gap-4">
 
-            <a
-              href="#"
-              className="rounded-xl border border-slate-800 bg-slate-900/40 p-4 transition hover:border-blue-500"
-            >
-              <FaLinkedin size={22} />
-            </a>
+          <a
+  href="https://www.linkedin.com/in/jimmy-safari-482b82310"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="rounded-xl border border-slate-800 bg-slate-900/40 p-4 transition hover:border-blue-500"
+>
+  <FaLinkedin size={22} />
+</a>
 
             <a
               href="#"

@@ -161,7 +161,7 @@ const Projects = () => {
           </span>
 
           <h3 className="mt-3 text-3xl font-bold md:text-4xl">
-            Founder & CEO — Sajims Company
+            Founder — Sajims
           </h3>
 
           <p className="mt-6 max-w-3xl leading-relaxed text-slate-300">
