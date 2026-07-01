@@ -316,10 +316,10 @@ const Projects = () => {
               },
               {
                 image: "/design2.png",
-                title: "Church poster",
+                title: "Church posters",
               },
               {
-                image: "/design3.jpg",
+                image: "/design3.png",
                 title: "Birthday flyers",
               },
             ].map((design) => (
@@ -420,7 +420,7 @@ const Projects = () => {
         </div>
 
       )}
-
+<h6>and many more...</h6>
     </section>
   );
 };
