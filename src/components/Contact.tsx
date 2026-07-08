@@ -7,6 +7,7 @@ FaPhoneAlt,
 FaWhatsapp,
 FaLinkedin,
 FaMapMarkerAlt,
+FaGithub,
 } from "react-icons/fa";
 
 console.log(import.meta.env.VITE_EMAILJS_SERVICE_ID);
@@ -194,10 +195,12 @@ return ( <section
 </a>
 
             <a
-              href="#"
+              href="https://github.com/JimmySaf"
+              target="_blank"
+              rel="noreferrer"
               className="rounded-xl border border-slate-800 bg-slate-900/40 p-4 transition hover:border-blue-500"
             >
-            
+            <FaGithub size={22} />
             </a>
 
             <a
