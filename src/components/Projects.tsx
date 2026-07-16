@@ -22,7 +22,6 @@ const projects = [
     technologies: [
       "Web Development",
       "App Development",
-      "SEO",
       "Digital Marketing",
       "Branding",
     ],
@@ -420,7 +419,7 @@ const Projects = () => {
         </div>
 
       )}
-<h6>and many more...</h6>
+<h6> and many more...</h6>
     </section>
   );
 };
