@@ -60,8 +60,8 @@ const About = () => {
               </p>
 
               <p className="text-slate-400 leading-relaxed mb-6">
-                My journey spans frontend development, backend
-                engineering, databases, UI/UX design and modern web
+                My journey spans frontend development,
+              , databases, UI/UX design, Mobile App development and modern web
                 technologies. I enjoy transforming ideas into reliable
                 and user-friendly software products.
               </p>
