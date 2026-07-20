@@ -73,7 +73,7 @@ const Hero = () => {
 
             Hi, I'm{" "}
 
-            <span className="bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from blue-500 via-red-400 to-red-600 bg-clip-text text-transparent">
               Jimmy Safari
             </span>
 
@@ -149,7 +149,7 @@ const Hero = () => {
             <div className="absolute inset-[8px] overflow-hidden rounded-full border border-slate-800">
 
               <img
-                src="/profilec.jpg"
+                src="/profilec.png"
                 alt="Jimmy Safari"
                 className="h-full w-full object-cover transition duration-700 hover:scale-110"
               />
