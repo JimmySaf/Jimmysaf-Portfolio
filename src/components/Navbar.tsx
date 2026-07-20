@@ -43,7 +43,7 @@ const Navbar = () => {
             "
           >
             Jimmy
-            <span className="text-blue-500">.</span>
+            <span className="text-red-500">.</span>
           </a>
 
           {/* Desktop Navigation */}
