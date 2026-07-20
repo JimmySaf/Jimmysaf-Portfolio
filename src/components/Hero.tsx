@@ -65,7 +65,7 @@ const Hero = () => {
         {/* Left Content */}
         <div>
 
-          <p className="mb-6 text-xs uppercase tracking-[0.3em] text-blue-500">
+          <p className="mb-6 text-xs uppercase tracking-[0.3em] text-red-500">
             My Portfolio
           </p>
 
@@ -73,7 +73,14 @@ const Hero = () => {
 
             Hi, I'm{" "}
 
-            <span className="bg-gradient-to-r from blue-500 via-red-400 to-red-600 bg-clip-text text-transparent">
+            <span className="
+bg-gradient-to-r
+from-red-700
+via-red-500
+to-orange-400
+bg-clip-text
+text-transparent
+">
               Jimmy Safari
             </span>
 
@@ -100,10 +107,27 @@ const Hero = () => {
 
             <a
               href="#projects"
-              className="rounded-full bg-blue-600 px-6 py-3 font-medium transition hover:bg-blue-700"
-            >
-              View Projects →
-            </a>
+className="
+rounded-full
+bg-gradient-to-r
+from-red-800
+via-red-600
+to-red-500
+px-7
+py-3
+font-semibold
+text-white
+transition-all
+duration-500
+hover:scale-105
+hover:shadow-2xl
+hover:shadow-red-500/40
+active:scale-95
+"
+>
+  View Projects →
+</a>
+          
 
             <a
               href="/resume.pdf"
@@ -149,7 +173,7 @@ const Hero = () => {
             <div className="absolute inset-[8px] overflow-hidden rounded-full border border-slate-800">
 
               <img
-                src="/profilec.png"
+                src="/profilec.jpeg"
                 alt="Jimmy Safari"
                 className="h-full w-full object-cover transition duration-700 hover:scale-110"
               />
@@ -159,7 +183,7 @@ const Hero = () => {
             {/* Open To Work */}
             <div className="absolute -bottom-3 -right-3 flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/90 px-4 py-2 text-xs shadow-xl">
 
-              <span className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
+              <span className="h-2 w-2 rounded-full bg-red-500 animate-pulse" />
 
               Open to Work
 
