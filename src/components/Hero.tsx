@@ -110,9 +110,9 @@ text-transparent
 className="
 rounded-full
 bg-gradient-to-r
-from-red-800
-via-red-600
-to-red-500
+from-orange-800
+via-orange-600
+to-orange-500
 px-7
 py-3
 font-semibold
@@ -183,7 +183,7 @@ active:scale-95
             {/* Open To Work */}
             <div className="absolute -bottom-3 -right-3 flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/90 px-4 py-2 text-xs shadow-xl">
 
-              <span className="h-2 w-2 rounded-full bg-red-500 animate-pulse" />
+              <span className="h-2 w-2 rounded-full bg-orange-500 animate-pulse" />
 
               Open to Work
 
