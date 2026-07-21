@@ -28,13 +28,13 @@ const About = () => {
         {/* Section Header */}
         <div className="text-center mb-20">
 
-          <span className="text-blue-500 uppercase tracking-[0.3em] text-sm">
+          <span className="text-red-500 uppercase tracking-[0.3em] text-sm">
             About Me
           </span>
 
           <h2 className="mt-4 text-4xl md:text-6xl font-bold">
             Building Solutions
-            <span className="block bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-red-500 to-red-400 bg-clip-text text-transparent">
               Through Code
             </span>
           </h2>
@@ -46,7 +46,7 @@ const About = () => {
           {/* Left Side */}
           <div>
 
-            <div className="rounded-3xl border border-slate-800 bg-slate-900/50 backdrop-blur-md p-8">
+            <div className="rounded-3xl border border-slate-800 bg-slate-900/50 backdrop-red-md p-8">
 
               <h3 className="text-3xl font-bold mb-6">
                 Who I Am
@@ -95,10 +95,10 @@ const About = () => {
                     transition-all
                     duration-300
                     hover:-translate-y-2
-                    hover:border-blue-500
+                    hover:border-orange-500
                   "
                 >
-                  <h3 className="text-4xl font-bold text-blue-500">
+                  <h3 className="text-4xl font-bold text-red-500">
                     {stat.value}
                   </h3>
 
@@ -119,7 +119,7 @@ const About = () => {
                 border
                 border-slate-800
                 bg-gradient-to-r
-                from-blue-500/10
+                from-red-500/10
                 to-cyan-500/10
                 p-8
               "
