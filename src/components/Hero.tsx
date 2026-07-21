@@ -88,7 +88,7 @@ text-transparent
 
           <p className="mt-6 font-mono text-xl text-slate-400 md:text-2xl">
             {typed}
-            <span className="ml-1 animate-pulse text-blue-500">
+            <span className="ml-1 animate-pulse text-orange-500">
               |
             </span>
           </p>
