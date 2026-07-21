@@ -108,9 +108,9 @@ const Skills = () => {
     >
       {/* Background Glow */}
 
-      <div className="absolute top-20 left-0 w-72 h-72 bg-blue-500/10 blur-3xl rounded-full" />
+      <div className="absolute top-20 left-0 w-72 h-72 bg-orange-500/10 blur-3xl rounded-full" />
 
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500/10 blur-3xl rounded-full" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-red-500/10 blur-3xl rounded-full" />
 
       <div className="relative max-w-7xl mx-auto">
 
@@ -118,13 +118,13 @@ const Skills = () => {
 
         <div className="text-center mb-20">
 
-          <p className="text-orange-500 uppercase tracking-[0.3em] text-sm">
+          <p className="text-red-500 uppercase tracking-[0.3em] text-sm">
             Technical Arsenal
           </p>
 
           <h2 className="mt-4 text-4xl md:text-6xl font-bold">
             Skills &
-            <span className="block bg-gradient-to-r from-orange-500 to-cyan-400 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-red-500 to-cyan-400 bg-clip-text text-transparent">
               Technologies
             </span>
           </h2>
@@ -151,7 +151,7 @@ const Skills = () => {
                 bg-slate-900/40
                 backdrop-blur-md
                 p-8
-                hover:border-orange-500/40
+                hover:border-red-500/40
                 transition-all
                 duration-500
               "
@@ -185,7 +185,7 @@ const Skills = () => {
                     "
                   >
 
-                    <span className="text-2xl text-orange-500 group-hover:scale-110 transition">
+                    <span className="text-2xl text-red-500 group-hover:scale-110 transition">
                       {skill.icon}
                     </span>
 
@@ -247,8 +247,8 @@ const Skills = () => {
                     rounded-full
                     bg-blue-500/10
                     border
-                    border-orange-500/20
-                    text-orange-400
+                    border-red-500/20
+                    text-red-400
                   "
                 >
                   {item}
