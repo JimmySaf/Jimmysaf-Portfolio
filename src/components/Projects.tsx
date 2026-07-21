@@ -110,9 +110,9 @@ const Projects = () => {
     >
       {/* Background Glow */}
 
-      <div className="absolute top-0 left-0 h-96 w-96 rounded-full bg-blue-500/10 blur-3xl" />
+      <div className="absolute top-0 left-0 h-96 w-96 rounded-full bg-red-500/10 blur-3xl" />
 
-      <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-cyan-500/10 blur-3xl" />
+      <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-red-500/10 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl">
 
@@ -120,14 +120,14 @@ const Projects = () => {
 
         <div className="mb-20 text-center">
 
-          <p className="text-sm uppercase tracking-[0.3em] text-blue-500">
+          <p className="text-sm uppercase tracking-[0.3em] text-red-500">
             Portfolio
           </p>
 
           <h2 className="mt-4 text-4xl font-bold md:text-6xl">
 
             Projects, Leadership &
-            <span className="block bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-red-500 to-red-400 bg-clip-text text-transparent">
               Digital Portfolio
             </span>
 
@@ -147,15 +147,15 @@ const Projects = () => {
             mb-16
             rounded-3xl
             border
-            border-blue-500/30
+            border-red-500/30
             bg-gradient-to-r
-            from-blue-500/10
-            to-cyan-500/10
+            from-red-500/10
+            to-orange-500/10
             p-10
             backdrop-blur-md
           "
         >
-          <span className="text-sm uppercase tracking-wider text-blue-400">
+          <span className="text-sm uppercase tracking-wider text-red-400">
             Founder & Leadership
           </span>
 
@@ -183,11 +183,11 @@ const Projects = () => {
                   rounded-full
                   border
                   border-blue-500/20
-                  bg-blue-500/10
+                  bg-red-500/10
                   px-4
                   py-2
                   text-sm
-                  text-blue-400
+                  text-red-400
                 "
               >
                 {tag}
@@ -216,7 +216,7 @@ const Projects = () => {
                 transition-all
                 duration-300
                 hover:-translate-y-2
-                hover:border-blue-500/40
+                hover:border-red-500/40
               "
             >
               <h4 className="font-semibold">
@@ -245,11 +245,11 @@ const Projects = () => {
                 transition-all
                 duration-500
                 hover:-translate-y-2
-                hover:border-blue-500/40
+                hover:border-red-500/40
               "
             >
 
-              <span className="text-sm text-blue-400">
+              <span className="text-sm text-red-400">
                 {project.category}
               </span>
 
@@ -336,7 +336,7 @@ const Projects = () => {
                   transition-all
                   duration-500
                   hover:-translate-y-2
-                  hover:border-blue-500/40
+                  hover:border-red-500/40
                 "
               >
 
