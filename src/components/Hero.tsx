@@ -156,18 +156,21 @@ active:scale-95
             {/* Glow */}
             <div className="absolute inset-0 rounded-full bg-blue-500/20 blur-3xl" />
 
-            {/* Rotating Ring */}
-            <div
-              className="absolute inset-0 rounded-full animate-spin"
-              style={{
-                animationDuration: "12s",
-                background:
-                  "conic-gradient(#3b82f6,#06b6d4,#f59e0b,#8b5cf6,#3b82f6)",
-              }}
-            />
+{/* Rotating Ring */}
+<div
+  className="absolute inset-0 rounded-full animate-spin"
+  style={{
+    animationDuration: "15s",
+    background:
+      "conic-gradient(#7F1D1D, #B91C1C, #DC2626, #F87171, #FBBF24, #B91C1C)",
+  }}
+/>
 
-            {/* Dark Ring */}
-            <div className="absolute inset-[4px] rounded-full bg-slate-950" />
+{/* Dark Ring */}
+<div className="absolute inset-[5px] rounded-full bg-slate-950" />
+
+
+
 
             {/* Profile Image */}
             <div className="absolute inset-[8px] overflow-hidden rounded-full border border-slate-800">
