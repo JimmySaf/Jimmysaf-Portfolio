@@ -118,13 +118,13 @@ const Skills = () => {
 
         <div className="text-center mb-20">
 
-          <p className="text-blue-500 uppercase tracking-[0.3em] text-sm">
+          <p className="text-orange-500 uppercase tracking-[0.3em] text-sm">
             Technical Arsenal
           </p>
 
           <h2 className="mt-4 text-4xl md:text-6xl font-bold">
             Skills &
-            <span className="block bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-orange-500 to-cyan-400 bg-clip-text text-transparent">
               Technologies
             </span>
           </h2>
@@ -151,7 +151,7 @@ const Skills = () => {
                 bg-slate-900/40
                 backdrop-blur-md
                 p-8
-                hover:border-blue-500/40
+                hover:border-orange-500/40
                 transition-all
                 duration-500
               "
@@ -178,14 +178,14 @@ const Skills = () => {
                       border
                       border-slate-800
                       bg-slate-950/50
-                      hover:border-blue-500
+                      hover:border-orange-500
                       hover:-translate-y-1
                       transition-all
                       duration-300
                     "
                   >
 
-                    <span className="text-2xl text-blue-500 group-hover:scale-110 transition">
+                    <span className="text-2xl text-orange-500 group-hover:scale-110 transition">
                       {skill.icon}
                     </span>
 
@@ -247,8 +247,8 @@ const Skills = () => {
                     rounded-full
                     bg-blue-500/10
                     border
-                    border-blue-500/20
-                    text-blue-400
+                    border-orange-500/20
+                    text-orange-400
                   "
                 >
                   {item}
