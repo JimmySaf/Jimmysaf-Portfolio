@@ -78,9 +78,9 @@ return ( <section
  >
 {/* Background Glow */}
 
-  <div className="absolute left-0 top-0 h-96 w-96 rounded-full bg-blue-500/10 blur-3xl" />
+  <div className="absolute left-0 top-0 h-96 w-96 rounded-full bg-red-500/10 blur-3xl" />
 
-  <div className="absolute right-0 bottom-0 h-96 w-96 rounded-full bg-cyan-500/10 blur-3xl" />
+  <div className="absolute right-0 bottom-0 h-96 w-96 rounded-full bg-red-500/10 blur-3xl" />
 
   <div className="relative mx-auto max-w-7xl">
 
@@ -88,13 +88,13 @@ return ( <section
 
     <div className="mb-20 text-center">
 
-      <p className="text-sm uppercase tracking-[0.3em] text-blue-500">
+      <p className="text-sm uppercase tracking-[0.3em] text-red-500">
         Contact
       </p>
 
       <h2 className="mt-4 text-4xl font-bold md:text-6xl">
         Let's Build
-        <span className="block bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+        <span className="block bg-gradient-to-r from-red-500 to-cyan-400 bg-clip-text text-transparent">
           Something Amazing
         </span>
       </h2>
@@ -121,7 +121,7 @@ return ( <section
 
           <div className="flex items-center gap-5 rounded-2xl border border-slate-800 bg-slate-900/40 p-5 backdrop-blur-md">
 
-            <div className="rounded-xl bg-blue-500/10 p-4 text-blue-400">
+            <div className="rounded-xl bg-red-500/10 p-4 text-red-400">
               <FaEnvelope size={24} />
             </div>
 
@@ -139,7 +139,7 @@ return ( <section
 
           <div className="flex items-center gap-5 rounded-2xl border border-slate-800 bg-slate-900/40 p-5 backdrop-blur-md">
 
-            <div className="rounded-xl bg-blue-500/10 p-4 text-blue-400">
+            <div className="rounded-xl bg-red-500/10 p-4 text-red-400">
               <FaPhoneAlt size={24} />
             </div>
 
@@ -157,7 +157,7 @@ return ( <section
 
           <div className="flex items-center gap-5 rounded-2xl border border-slate-800 bg-slate-900/40 p-5 backdrop-blur-md">
 
-            <div className="rounded-xl bg-blue-500/10 p-4 text-blue-400">
+            <div className="rounded-xl bg-blue-500/10 p-4 text-red-400">
               <FaMapMarkerAlt size={24} />
             </div>
 
@@ -189,7 +189,7 @@ return ( <section
   href="https://www.linkedin.com/in/jimmy-safari-482b82310"
   target="_blank"
   rel="noopener noreferrer"
-  className="rounded-xl border border-slate-800 bg-slate-900/40 p-4 transition hover:border-blue-500"
+  className="rounded-xl border border-slate-800 bg-slate-900/40 p-4 transition hover:border-red-500"
 >
   <FaLinkedin size={22} />
 </a>
@@ -198,7 +198,7 @@ return ( <section
               href="https://github.com/JimmySaf"
               target="_blank"
               rel="noreferrer"
-              className="rounded-xl border border-slate-800 bg-slate-900/40 p-4 transition hover:border-blue-500"
+              className="rounded-xl border border-slate-800 bg-slate-900/40 p-4 transition hover:border-red-500"
             >
             <FaGithub size={22} />
             </a>
@@ -207,7 +207,7 @@ return ( <section
               href="https://wa.me/254791939576"
               target="_blank"
               rel="noreferrer"
-              className="rounded-xl border border-slate-800 bg-slate-900/40 p-4 transition hover:border-green-500"
+              className="rounded-xl border border-slate-800 bg-slate-900/40 p-4 transition hover:border-red-500"
             >
               <FaWhatsapp size={22} />
             </a>
@@ -238,7 +238,7 @@ return ( <section
             onChange={handleChange}
             placeholder="Your Name"
             required
-            className="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-4 outline-none focus:border-blue-500"
+            className="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-4 outline-none focus:border-red-500"
           />
 
           <input
@@ -248,7 +248,7 @@ return ( <section
             onChange={handleChange}
             placeholder="Your Email"
             required
-            className="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-4 outline-none focus:border-blue-500"
+            className="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-4 outline-none focus:border-red-500"
           />
 
           <input
@@ -258,7 +258,7 @@ return ( <section
             onChange={handleChange}
             placeholder="Subject"
             required
-            className="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-4 outline-none focus:border-blue-500"
+            className="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-4 outline-none focus:border-red-500"
           />
 
           <textarea
@@ -268,7 +268,7 @@ return ( <section
             onChange={handleChange}
             placeholder="Your Message..."
             required
-            className="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-4 outline-none focus:border-blue-500"
+            className="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-4 outline-none focus:border-red-500"
           />
 
           <button
@@ -278,8 +278,8 @@ return ( <section
               w-full
               rounded-xl
               bg-gradient-to-r
-              from-blue-600
-              to-cyan-500
+              from-red-600
+              to-orange-500
               px-6
               py-4
               font-semibold
@@ -293,7 +293,7 @@ return ( <section
           </button>
 
           {success && (
-            <div className="rounded-xl border border-green-500/30 bg-green-500/10 p-4 text-center text-green-400">
+            <div className="rounded-xl border border-orange-500/30 bg-green-500/10 p-4 text-center text-green-400">
               ✓ Message sent successfully!
             </div>
           )}
