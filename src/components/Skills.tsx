@@ -245,7 +245,7 @@ const Skills = () => {
                     px-5
                     py-2
                     rounded-full
-                    bg-blue-500/10
+                    bg-orange-500/10
                     border
                     border-red-500/20
                     text-red-400
