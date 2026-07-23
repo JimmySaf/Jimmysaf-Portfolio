@@ -157,7 +157,7 @@ return ( <section
 
           <div className="flex items-center gap-5 rounded-2xl border border-slate-800 bg-slate-900/40 p-5 backdrop-blur-md">
 
-            <div className="rounded-xl bg-blue-500/10 p-4 text-red-400">
+            <div className="rounded-xl bg-orange-500/10 p-4 text-red-400">
               <FaMapMarkerAlt size={24} />
             </div>
 
