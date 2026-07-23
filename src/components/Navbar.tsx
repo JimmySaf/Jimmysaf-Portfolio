@@ -39,7 +39,7 @@ const Navbar = () => {
               font-bold
               text-white
               transition
-              hover:text-blue-400
+              hover:text-orange-400
             "
           >
             Jimmy
@@ -56,13 +56,13 @@ const Navbar = () => {
                   className="
                     relative
                     transition
-                    hover:text-blue-500
+                    hover:text-orange-500
                     after:absolute
                     after:left-0
                     after:-bottom-1
                     after:h-[2px]
                     after:w-0
-                    after:bg-blue-500
+                    after:bg-orange-500
                     after:transition-all
                     hover:after:w-full
                   "
@@ -82,7 +82,7 @@ const Navbar = () => {
               text-white
               text-3xl
               transition
-              hover:text-blue-500
+              hover:text-orange-500
             "
             aria-label="Toggle Menu"
           >
@@ -122,7 +122,7 @@ const Navbar = () => {
                 transition-all
                 duration-300
                 hover:bg-slate-800
-                hover:text-blue-400
+                hover:text-orange-400
               "
             >
               {link}
