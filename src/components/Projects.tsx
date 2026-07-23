@@ -182,7 +182,7 @@ const Projects = () => {
                 className="
                   rounded-full
                   border
-                  border-blue-500/20
+                  border-orange-500/20
                   bg-red-500/10
                   px-4
                   py-2
