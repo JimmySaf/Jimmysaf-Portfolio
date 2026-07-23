@@ -55,7 +55,7 @@ const Hero = () => {
       className="relative min-h-screen overflow-hidden bg-slate-950"
     >
       {/* Glow Orb 1 */}
-      <div className="absolute -top-24 -left-24 h-[420px] w-[420px] rounded-full bg-blue-500/20 blur-3xl animate-pulse" />
+      <div className="absolute -top-24 -left-24 h-[420px] w-[420px] rounded-full bg-red-500/20 blur-3xl animate-pulse" />
 
       {/* Glow Orb 2 */}
       <div className="absolute top-32 right-0 h-[350px] w-[350px] rounded-full bg-amber-500/20 blur-3xl animate-pulse" />
@@ -154,7 +154,7 @@ active:scale-95
           <div className="relative h-80 w-80 md:h-96 md:w-96">
 
             {/* Glow */}
-            <div className="absolute inset-0 rounded-full bg-blue-500/20 blur-3xl" />
+            <div className="absolute inset-0 rounded-full bg-red-500/20 blur-3xl" />
 
 {/* Rotating Ring */}
 <div
