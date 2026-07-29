@@ -50,7 +50,7 @@ const Navbar = () => {
   <img
     src="/profilec.jpeg"
     alt="Jimmy Safari Logo"
-    className="h-9 w-9 rounded-full object-cover"
+    className="h-6 w-6 rounded-full object-cover"
   />
 </a>
 
