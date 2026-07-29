@@ -31,20 +31,28 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
 
           {/* Logo */}
-          <a
-            href="#home"
-            onClick={() => setOpen(false)}
-            className="
-              text-2xl
-              font-bold
-              text-white
-              transition
-              hover:text-orange-400
-            "
-          >
-            Jimmy
-            <span className="text-red-500"></span>
-          </a>
+<a
+  href="#home"
+  onClick={() => setOpen(false)}
+  className="
+    flex
+    items-center
+    gap-3
+    text-2xl
+    font-bold
+    text-white
+    transition
+    hover:text-red-500
+  "
+>
+  <span>Jimmy</span>
+
+  <img
+    src="/profilec.jpeg"
+    alt="Jimmy Safari Logo"
+    className="h-9 w-9 rounded-full object-cover"
+  />
+</a>
 
           {/* Desktop Navigation */}
           <ul className="hidden md:flex items-center gap-8 text-slate-300">
