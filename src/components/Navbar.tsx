@@ -29,8 +29,6 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
-
-          {/* Logo */}
 <a
   href="#home"
   onClick={() => setOpen(false)}
@@ -38,21 +36,31 @@ const Navbar = () => {
     flex
     items-center
     gap-3
-    text-2xl
-    font-bold
-    text-white
-    transition
-    hover:text-red-500
+    transition-all
+    duration-300
+    hover:scale-105
   "
 >
-  <span>Jimmy</span>
-
   <img
     src="/profilec.jpeg"
-    alt="Jimmy Safari Logo"
-    className="h-6 w-6 rounded-full object-cover"
+    alt="Jimmy Safari"
+    className="
+      h-11
+      w-11
+      rounded-xl
+      object-cover
+      border
+      border-red-500/60
+      shadow-lg
+      shadow-red-500/20
+    "
   />
+
+  <span className="text-2xl font-bold text-white">
+    Jimmy
+  </span>
 </a>
+         
 
           {/* Desktop Navigation */}
           <ul className="hidden md:flex items-center gap-8 text-slate-300">
