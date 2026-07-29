@@ -320,6 +320,16 @@ const Projects = () => {
               {
                 image: "/design3.png",
                 title: "Birthday flyers",
+
+              },
+                  {
+                image: "/design4.png",
+                title: "Worship Night",
+              },
+                  {
+                image: "/design5.png",
+                title: "Online Programmes",
+
               },
             ].map((design) => (
 
