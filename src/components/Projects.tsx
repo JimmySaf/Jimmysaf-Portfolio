@@ -66,19 +66,81 @@ const projects = [
     ],
   },
 
-{
-  category: "Web Development",
-  title: "Koheleth International Organization Website",
-  description:
-    "Designed and developed a modern, responsive website for Koheleth International Organization. The platform showcases the organization's vision, leadership, ministries, events, projects and global outreach while providing an engaging user experience across all devices.",
-  technologies: [
-    "React",
-    "TypeScript",
-    "Tailwind CSS",
-    "Responsive Design",
-    "UI/UX Design",
-    "Frontend Development",
-  ],
+<div className="group rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-md transition-all duration-300 hover:border-orange-500/30 hover:bg-white/10">
+  {/* Category */}
+  <span className="text-sm font-medium uppercase tracking-wider text-orange-400">
+    {project.category}
+  </span>
+
+  {/* Title */}
+  <h3 className="mt-3 text-2xl font-bold text-white">
+    {project.title}
+  </h3>
+
+  {/* Description */}
+  <p className="mt-4 leading-relaxed text-slate-300">
+    {project.description}
+  </p>
+
+  {/* Technologies */}
+  <div className="mt-6 flex flex-wrap gap-2">
+    {project.technologies.map((tech) => (
+      <span
+        key={tech}
+        className="rounded-full border border-orange-500/20 bg-orange-500/10 px-3 py-1 text-xs text-orange-300"
+      >
+        {tech}
+      </span>
+    ))}
+  </div>
+
+  {/* Visit Website Button */}
+  {project.liveUrl && (
+    <div className="mt-8">
+      <a
+        href={project.liveUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="
+          inline-flex
+          items-center
+          gap-2
+          rounded-full
+          bg-gradient-to-r
+          from-orange-500
+          to-yellow-500
+          px-5
+          py-2.5
+          text-sm
+          font-semibold
+          text-white
+          shadow-lg
+          shadow-orange-500/25
+          transition-all
+          duration-300
+          hover:scale-105
+          hover:shadow-orange-500/40
+        "
+      >
+        Visit Website
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="15"
+          height="15"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M7 17L17 7" />
+          <path d="M7 7h10v10" />
+        </svg>
+      </a>
+    </div>
+  )}
+</div>
 },
   {
     category: "Academic Project",
