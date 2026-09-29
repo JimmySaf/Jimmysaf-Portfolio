@@ -139,64 +139,107 @@ const Projects = () => {
           </p>
 
         </div>
+{/* Founder Card */}
+<div
+  className="
+    mb-16
+    rounded-3xl
+    border
+    border-red-500/30
+    bg-gradient-to-r
+    from-red-500/10
+    to-orange-500/10
+    p-10
+    backdrop-blur-md
+  "
+>
+  <span className="text-sm uppercase tracking-wider text-red-400">
+    Founder & Leadership
+  </span>
 
-        {/* Founder Card */}
+  <h3 className="mt-3 text-3xl font-bold md:text-4xl">
+    Founder — Sajims
+  </h3>
 
-        <div
-          className="
-            mb-16
-            rounded-3xl
-            border
-            border-red-500/30
-            bg-gradient-to-r
-            from-red-500/10
-            to-orange-500/10
-            p-10
-            backdrop-blur-md
-          "
-        >
-          <span className="text-sm uppercase tracking-wider text-red-400">
-            Founder & Leadership
-          </span>
+  <p className="mt-6 max-w-3xl leading-relaxed text-slate-300">
+    Leading Sajims in delivering innovative software solutions,
+    digital services, technology consulting and creative branding.
+    Driving business growth through innovation and technology.
+  </p>
 
-          <h3 className="mt-3 text-3xl font-bold md:text-4xl">
-            Founder — Sajims
-          </h3>
+  {/* Tags */}
+  <div className="mt-6 flex flex-wrap gap-3">
+    {[
+      "Leadership",
+      "Business Strategy",
+      "Innovation",
+      "Technology",
+    ].map((tag) => (
+      <span
+        key={tag}
+        className="
+          rounded-full
+          border
+          border-orange-500/20
+          bg-red-500/10
+          px-4
+          py-2
+          text-sm
+          text-red-400
+        "
+      >
+        {tag}
+      </span>
+    ))}
+  </div>
 
-          <p className="mt-6 max-w-3xl leading-relaxed text-slate-300">
-            Leading Sajims in delivering innovative software solutions,
-            digital services, technology consulting and creative branding.
-            Driving business growth through innovation and technology.
-          </p>
-
-          <div className="mt-6 flex flex-wrap gap-3">
-
-            {[
-              "Leadership",
-              "Business Strategy",
-              "Innovation",
-              "Technology",
-            ].map((tag) => (
-              <span
-                key={tag}
-                className="
-                  rounded-full
-                  border
-                  border-orange-500/20
-                  bg-red-500/10
-                  px-4
-                  py-2
-                  text-sm
-                  text-red-400
-                "
-              >
-                {tag}
-              </span>
-            ))}
-
-          </div>
-
-        </div>
+  {/* Website Button */}
+  <div className="mt-8">
+    <a
+      href="https://sajims-company.vercel.app/"          
+      target="_blank"
+      rel="noopener noreferrer"
+      className="
+        inline-flex
+        items-center
+        gap-2
+        rounded-full
+        bg-gradient-to-r
+        from-red-500
+        to-orange-500
+        px-6
+        py-3
+        text-sm
+        font-semibold
+        text-white
+        shadow-lg
+        shadow-red-500/25
+        transition-all
+        duration-300
+        hover:scale-105
+        hover:shadow-red-500/40
+        hover:from-red-600
+        hover:to-orange-600
+      "
+    >
+      Visit Sajims Website
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M7 17L17 7" />
+        <path d="M7 7h10v10" />
+      </svg>
+    </a>
+  </div>
+</div>
 
         {/* Services */}
 
