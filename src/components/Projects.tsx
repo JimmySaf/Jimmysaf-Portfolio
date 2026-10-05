@@ -1,6 +1,14 @@
 import { useState } from "react";
 
-const projects = [
+interface Project {
+  category: string;
+  title: string;
+  description: string;
+  technologies: string[];
+  liveUrl?: string;
+}
+
+const projects: Project[] = [
   {
     category: "Professional Experience",
     title: "ICT Attachment - Kilifi County Assembly",
@@ -66,25 +74,22 @@ const projects = [
     ],
   },
 
-{
-  category: "Web Development",
+  {
+    category: "Web Development",
+    title: "Koheleth International Organization Website",
+    description:
+      "Designed and developed a modern, responsive website for Koheleth International Organization. The platform showcases the organization's vision, leadership, ministries, events, projects and global outreach while providing an engaging user experience across all devices.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Responsive Design",
+      "UI/UX Design",
+      "Frontend Development",
+    ],
+    liveUrl: "https://koheleth-fellowship-website.vercel.app/",
+  },
 
-  title: "Koheleth International Organization Website",
-
-  description:
-    "Designed and developed a modern, responsive website for Koheleth International Organization. The platform showcases the organization's vision, leadership, ministries, events, projects and global outreach while providing an engaging user experience across all devices.",
-
-  technologies: [
-    "React",
-    "TypeScript",
-    "Tailwind CSS",
-    "Responsive Design",
-    "UI/UX Design",
-    "Frontend Development",
-  ],
-
-  link: "https://YOUR-KOHELETH-WEBSITE-URL.com",
-},
   {
     category: "Academic Project",
     title: "Multimedia Systems Project",
@@ -111,11 +116,11 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="relative overflow-hidden bg-slate-950 py-32 px-6"
+      className="relative overflow-hidden bg-slate-950 px-6 py-32"
     >
       {/* Background Glow */}
 
-      <div className="absolute top-0 left-0 h-96 w-96 rounded-full bg-red-500/10 blur-3xl" />
+      <div className="absolute left-0 top-0 h-96 w-96 rounded-full bg-red-500/10 blur-3xl" />
 
       <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-red-500/10 blur-3xl" />
 
@@ -130,12 +135,10 @@ const Projects = () => {
           </p>
 
           <h2 className="mt-4 text-4xl font-bold md:text-6xl">
-
             Projects, Leadership &
             <span className="block bg-gradient-to-r from-red-500 to-red-400 bg-clip-text text-transparent">
               Digital Portfolio
             </span>
-
           </h2>
 
           <p className="mx-auto mt-6 max-w-3xl text-slate-400">
@@ -144,107 +147,114 @@ const Projects = () => {
           </p>
 
         </div>
-{/* Founder Card */}
-<div
-  className="
-    mb-16
-    rounded-3xl
-    border
-    border-red-500/30
-    bg-gradient-to-r
-    from-red-500/10
-    to-orange-500/10
-    p-10
-    backdrop-blur-md
-  "
->
-  <span className="text-sm uppercase tracking-wider text-red-400">
-    Founder & Leadership
-  </span>
 
-  <h3 className="mt-3 text-3xl font-bold md:text-4xl">
-    Founder — Sajims
-  </h3>
+        {/* Founder Card */}
 
-  <p className="mt-6 max-w-3xl leading-relaxed text-slate-300">
-    Leading Sajims in delivering innovative software solutions,
-    digital services, technology consulting and creative branding.
-    Driving business growth through innovation and technology.
-  </p>
+        <div
+          className="
+            mb-16
+            rounded-3xl
+            border
+            border-red-500/30
+            bg-gradient-to-r
+            from-red-500/10
+            to-orange-500/10
+            p-10
+            backdrop-blur-md
+          "
+        >
 
-  {/* Tags */}
-  <div className="mt-6 flex flex-wrap gap-3">
-    {[
-      "Leadership",
-      "Business Strategy",
-      "Innovation",
-      "Technology",
-    ].map((tag) => (
-      <span
-        key={tag}
-        className="
-          rounded-full
-          border
-          border-orange-500/20
-          bg-red-500/10
-          px-4
-          py-2
-          text-sm
-          text-red-400
-        "
-      >
-        {tag}
-      </span>
-    ))}
-  </div>
+          <span className="text-sm uppercase tracking-wider text-red-400">
+            Founder & Leadership
+          </span>
 
-  {/* Website Button */}
-  <div className="mt-8">
-    <a
-      href="https://sajims-company.vercel.app/"          
-      target="_blank"
-      rel="noopener noreferrer"
-      className="
-        inline-flex
-        items-center
-        gap-2
-        rounded-full
-        bg-gradient-to-r
-        from-red-500
-        to-orange-500
-        px-6
-        py-3
-        text-sm
-        font-semibold
-        text-white
-        shadow-lg
-        shadow-red-500/25
-        transition-all
-        duration-300
-        hover:scale-105
-        hover:shadow-red-500/40
-        hover:from-red-600
-        hover:to-orange-600
-      "
-    >
-      Visit Sajims Website
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path d="M7 17L17 7" />
-        <path d="M7 7h10v10" />
-      </svg>
-    </a>
-  </div>
-</div>
+          <h3 className="mt-3 text-3xl font-bold md:text-4xl">
+            Founder — Sajims
+          </h3>
+
+          <p className="mt-6 max-w-3xl leading-relaxed text-slate-300">
+            Leading Sajims in delivering innovative software solutions,
+            digital services, technology consulting and creative branding.
+            Driving business growth through innovation and technology.
+          </p>
+
+          {/* Tags */}
+
+          <div className="mt-6 flex flex-wrap gap-3">
+            {[
+              "Leadership",
+              "Business Strategy",
+              "Innovation",
+              "Technology",
+            ].map((tag) => (
+              <span
+                key={tag}
+                className="
+                  rounded-full
+                  border
+                  border-orange-500/20
+                  bg-red-500/10
+                  px-4
+                  py-2
+                  text-sm
+                  text-red-400
+                "
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+
+          {/* Website Button */}
+
+          <div className="mt-8">
+            <a
+              href="https://sajims-company.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                inline-flex
+                items-center
+                gap-2
+                rounded-full
+                bg-gradient-to-r
+                from-red-500
+                to-orange-500
+                px-6
+                py-3
+                text-sm
+                font-semibold
+                text-white
+                shadow-lg
+                shadow-red-500/25
+                transition-all
+                duration-300
+                hover:scale-105
+                hover:shadow-red-500/40
+                hover:from-red-600
+                hover:to-orange-600
+              "
+            >
+              Visit Sajims Website
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M7 17L17 7" />
+                <path d="M7 7h10v10" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
 
         {/* Services */}
 
@@ -309,6 +319,8 @@ const Projects = () => {
                 {project.description}
               </p>
 
+              {/* Technologies */}
+
               <div className="mt-6 flex flex-wrap gap-3">
 
                 {project.technologies.map((tech) => (
@@ -331,6 +343,59 @@ const Projects = () => {
                 ))}
 
               </div>
+
+              {/* Project Website Button */}
+
+              {project.liveUrl && (
+                <div className="mt-6">
+
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="
+                      inline-flex
+                      items-center
+                      gap-2
+                      rounded-full
+                      bg-gradient-to-r
+                      from-red-500
+                      to-orange-500
+                      px-5
+                      py-2.5
+                      text-sm
+                      font-semibold
+                      text-white
+                      shadow-lg
+                      shadow-red-500/20
+                      transition-all
+                      duration-300
+                      hover:scale-105
+                      hover:from-red-600
+                      hover:to-orange-600
+                      hover:shadow-red-500/40
+                    "
+                  >
+                    Visit Website
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="15"
+                      height="15"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M7 17L17 7" />
+                      <path d="M7 7h10v10" />
+                    </svg>
+                  </a>
+
+                </div>
+              )}
 
             </div>
 
@@ -368,20 +433,18 @@ const Projects = () => {
               {
                 image: "/design3.png",
                 title: "Birthday flyers",
-
               },
-                  {
+              {
                 image: "/design4.png",
                 title: "Worship Night",
               },
-                  {
+              {
                 image: "/design5.png",
                 title: "Online Programmes",
               },
-                  {
+              {
                 image: "/design6.png",
                 title: "Birthday flyers",
-
               },
               {
                 image: "/design7.png",
@@ -390,7 +453,7 @@ const Projects = () => {
               {
                 image: "/design8.png",
                 title: "Fellowship Mobilisation",
-            },
+              },
             ].map((design) => (
 
               <div
@@ -456,8 +519,8 @@ const Projects = () => {
             items-center
             justify-center
             bg-black/90
-            backdrop-blur-md
             p-6
+            backdrop-blur-md
           "
           onClick={() => setSelectedImage(null)}
         >
@@ -465,11 +528,13 @@ const Projects = () => {
           <button
             className="
               absolute
-              top-6
               right-8
+              top-6
               text-5xl
               text-white
             "
+            onClick={() => setSelectedImage(null)}
+            aria-label="Close image preview"
           >
             ×
           </button>
@@ -489,7 +554,11 @@ const Projects = () => {
         </div>
 
       )}
-<h6> and many more...</h6>
+
+      <h6 className="mt-10 text-center text-slate-500">
+        and many more...
+      </h6>
+
     </section>
   );
 };
