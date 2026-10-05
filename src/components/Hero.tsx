@@ -4,7 +4,7 @@ const ROLES = [
   "Software engineer",
   "Tech Enthuasiast",
   "IT Consultant",
-  "Founder Sajims",
+  "Founder Sajims Company",
   "Graphic Designer",
   "Freelancer",
 ];
