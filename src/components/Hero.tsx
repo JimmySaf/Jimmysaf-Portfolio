@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 
 const ROLES = [
   "Software engineer",
+  "Founder,CEO Sajims Company",
   "Tech Enthuasiast",
-  "IT Consultant",
-  "Founder Sajims Company",
   "Graphic Designer",
   "Freelancer",
+  "IT Consultant",
 ];
 
 function useTyping(
