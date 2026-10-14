@@ -87,7 +87,7 @@ const projects: Project[] = [
       "UI/UX Design",
       "Frontend Development",
     ],
-    liveUrl: "https://koheleth-fellowship-website.vercel.app/",
+    liveUrl: "https://koheleth-fellowship-website.",
   },
 
   {
