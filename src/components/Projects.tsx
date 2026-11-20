@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 
 interface Project {
@@ -87,7 +88,23 @@ const projects: Project[] = [
       "UI/UX Design",
       "Frontend Development",
     ],
-    liveUrl: "https://koheleth-fellowship-website.",
+    liveUrl: "https://koheleth-fellowship-website.vercel.app/",
+  },
+
+  {
+    category: "Full Stack Web Development",
+    title: "ALEX CANDY ENTERPRISE Ordering Website",
+    description:
+      "Designed and developed an online ordering website for ALEX CANDY ENTERPRISE, enabling customers to explore products, place orders online and communicate directly through WhatsApp. The platform combines a Django REST Framework backend with a responsive React frontend.",
+    technologies: [
+      "Django REST Framework",
+      "React",
+      "TypeScript",
+      "SQLite",
+      "Online Ordering",
+      "WhatsApp Integration",
+    ],
+    liveUrl: "https://alex-candy-enterprice.onrender.com/",
   },
 
   {
@@ -112,6 +129,41 @@ const services = [
 
 const Projects = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const designs = [
+    {
+      image: "/design1.png",
+      title: "Fellowship Mobilisation",
+    },
+    {
+      image: "/design2.png",
+      title: "Church posters",
+    },
+    {
+      image: "/design3.png",
+      title: "Birthday flyers",
+    },
+    {
+      image: "/design4.png",
+      title: "Worship Night",
+    },
+    {
+      image: "/design5.png",
+      title: "Online Programmes",
+    },
+    {
+      image: "/design6.png",
+      title: "Birthday flyers",
+    },
+    {
+      image: "/design7.png",
+      title: "Conference flyer",
+    },
+    {
+      image: "/design8.png",
+      title: "Fellowship Mobilisation",
+    },
+  ];
 
   return (
     <section
@@ -205,7 +257,7 @@ const Projects = () => {
             ))}
           </div>
 
-          {/* Website Button */}
+          {/* Sajims Website Button */}
 
           <div className="mt-8">
             <a
@@ -324,7 +376,6 @@ const Projects = () => {
               <div className="mt-6 flex flex-wrap gap-3">
 
                 {project.technologies.map((tech) => (
-
                   <span
                     key={tech}
                     className="
@@ -339,7 +390,6 @@ const Projects = () => {
                   >
                     {tech}
                   </span>
-
                 ))}
 
               </div>
@@ -421,43 +471,10 @@ const Projects = () => {
 
           <div className="grid gap-8 md:grid-cols-3">
 
-            {[
-              {
-                image: "/design1.png",
-                title: "Fellowship Mobilisation",
-              },
-              {
-                image: "/design2.png",
-                title: "Church posters",
-              },
-              {
-                image: "/design3.png",
-                title: "Birthday flyers",
-              },
-              {
-                image: "/design4.png",
-                title: "Worship Night",
-              },
-              {
-                image: "/design5.png",
-                title: "Online Programmes",
-              },
-              {
-                image: "/design6.png",
-                title: "Birthday flyers",
-              },
-              {
-                image: "/design7.png",
-                title: "Conference flyer",
-              },
-              {
-                image: "/design8.png",
-                title: "Fellowship Mobilisation",
-              },
-            ].map((design) => (
+            {designs.map((design) => (
 
               <div
-                key={design.title}
+                key={design.image}
                 className="
                   group
                   overflow-hidden
