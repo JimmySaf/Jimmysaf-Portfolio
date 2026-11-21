@@ -98,9 +98,7 @@ text-transparent
             performant web experiences —
             from full-stack platforms to
             modern enterprise systems.
-            Currently focused on React,
-            TypeScript and scalable backend
-            solutions.
+        
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
