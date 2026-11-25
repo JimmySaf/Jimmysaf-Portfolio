@@ -108,6 +108,22 @@ const projects: Project[] = [
   },
 
   {
+    category: "E-commerce & Web Development",
+    title: "Brenda Wellness - International Wellness E-commerce Platform",
+    description:
+      "Developed an international wellness e-commerce platform offering wellness products, health and beauty essentials, and lifestyle products. The platform supports automatic currency detection, currency conversion and local-currency payments where supported. Customers can browse and shop in five languages: English, Spanish, French, Italian and German.",
+    technologies: [
+      "E-commerce",
+      "Multilingual Support",
+      "Currency Detection",
+      "Currency Conversion",
+      "International Payments",
+      "Responsive Design",
+    ],
+    liveUrl: "https://brenda-wellness.vercel.app/",
+  },
+
+  {
     category: "Academic Project",
     title: "Multimedia Systems Project",
     description:
@@ -131,38 +147,14 @@ const Projects = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const designs = [
-    {
-      image: "/design1.png",
-      title: "Fellowship Mobilisation",
-    },
-    {
-      image: "/design2.png",
-      title: "Church posters",
-    },
-    {
-      image: "/design3.png",
-      title: "Birthday flyers",
-    },
-    {
-      image: "/design4.png",
-      title: "Worship Night",
-    },
-    {
-      image: "/design5.png",
-      title: "Online Programmes",
-    },
-    {
-      image: "/design6.png",
-      title: "Birthday flyers",
-    },
-    {
-      image: "/design7.png",
-      title: "Conference flyer",
-    },
-    {
-      image: "/design8.png",
-      title: "Fellowship Mobilisation",
-    },
+    { image: "/design1.png", title: "Fellowship Mobilisation" },
+    { image: "/design2.png", title: "Church posters" },
+    { image: "/design3.png", title: "Birthday flyers" },
+    { image: "/design4.png", title: "Worship Night" },
+    { image: "/design5.png", title: "Online Programmes" },
+    { image: "/design6.png", title: "Birthday flyers" },
+    { image: "/design7.png", title: "Conference flyer" },
+    { image: "/design8.png", title: "Fellowship Mobilisation" },
   ];
 
   return (
